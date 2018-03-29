@@ -1,0 +1,14 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url: 'http://en.wikipedia.org'
+            default_session: goutte
+            goutte: ~
+            selenium2: 
+              wd_host: "http://127.0.0.1:4444/wd/hub"
+              capabilities: { "browserName": "chrome", "browser": "chrome", "version":"" }
+            browser_name: chrome
+    suites:
+        default:
+            contexts:
+                - FeatureContext
