@@ -1,7 +1,8 @@
 default:
     extensions:
         Behat\MinkExtension:
-            base_url: 'http://en.wikipedia.org'
+#            base_url: 'http://en.wikipedia.org'
+            base_url: 'https://vodafone-amelia-stg.ipsoft.com'
             default_session: goutte
             goutte: ~
             selenium2: 
